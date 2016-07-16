@@ -23,6 +23,7 @@ int main()
             cout << "event: " << event << endl;
             cout << "d: " << d << endl;
 
+            //temporário (apenas a solução básica antes de pensar na lógica)
             switch (event)
             {
                 case "Goal":
@@ -34,41 +35,6 @@ int main()
             }
         }
 
-
-       /* cout << "passou2" << endl;
-
-
-        vector<int> books(n);
-
-        for(k = 0; k < n; ++k)
-        {
-            cin >> books[k];
-        }
-
-        cin >> m;
-
-        sort(books.begin(), books.end());
-        i = books.front();
-        j = books.back();
-
-        for(k = 0; k < n; ++k)
-        {
-            first = books[k];
-            second = m - first;
-
-            if(binary_search(books.begin() + k + 1, books.end(), second))
-            {
-                if((second - first) < (j - i))
-                {
-                    i = first;
-                    j = second;
-                }
-
-            }
-        }
-
-        cout << "Peter should buy books whose prices are " << i << " and " << j << "." << endl << endl;
-        */
         getline(cin, input);
     }
     return 0;
