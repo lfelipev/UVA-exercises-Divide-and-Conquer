@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+﻿#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -16,7 +16,7 @@ bool run_simulation(vector<pair<int, pair<int,int>>> &v, double fuel) {
             else if (v[i].first == LEAK) ++leaks;
             else if (v[i].first == STATION) currentFuel = fuel;
             else if (v[i].first == MECHANIC) leaks = 0;
-            else if (v[i].first == GOAL) consumption = v[i].second.second;
+           // else if (v[i].first == GOAL) consumption = v[i].second.second;
         }
     }
     if (currentFuel >= 0) return true;
